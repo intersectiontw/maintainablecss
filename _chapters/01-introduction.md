@@ -6,32 +6,30 @@ permalink: /chapters/introduction/
 description: An introduction to MaintainableCSS, an approach to writing modular, scalable and of course maintainable CSS.
 ---
 
-*MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team write modular, scalable and maintainable code.
+*MaintainableCSS* 是 CSS 的架構規劃和寫作方式，幫助你和團隊撰寫模組化的、可擴張的，和可維護的程式碼。實際上的做法來說，身為一個開發者，我想要開個新功能、修改現有的功能，可以不用擔心蓋掉本來沒要換的樣式，甚至更糟的是我寫的程式碼在其他地方讓進度倒退。
 
-In practical terms, this means that as a developer I want to create new features, or edit existing features without having to concern myself with overriding styles I don't want applied, or worse that the code I write causes regression elsewhere.
+## 沒有可以下載的東西
 
-## There is nothing to download
+*MaintainableCSS* 不是你能夠下載的東西。這是可以幫助你為大型或小型網站撰寫 CSS 的原則、準則和通則。
 
-*MaintainableCSS* is not something you can download. It's a set of principles, guides and conventions that help you write CSS for large or small scale websites.
+## 到底什麼是「可維護性 (maintainable)」？
 
-## What does maintainable even mean?
+如果程式碼是「可維護的」，代表我可以修改一個模組和它的樣式，而不用擔心會意外造成其他模組的負面影響。我想要能夠撰寫心平氣和，對於分裝情況瞭若指掌的程式碼。
 
-Having maintainable code means that I can edit a module and it's styles without worrying that I have negatively caused problems in other modules by accident. I want to be able to write code that provides peace of mind knowing that my code is encapsulated.
+## 到底什麼是「可擴張性 (scalable)」？
 
-## What does scalable even mean?
+這代表，即使 CSS 程式碼的份量逐漸變大，維護（請見上一條）起來卻沒有更困難。如果你曾經接手一個很龐大的 CSS 程式碼，會擔心修改到既有的樣式，即會深感認同。
 
-This means, that as the CSS codebase increases in size, that maintaining code (see previous point) isn't any harder. If you have ever inherited a large CSS codebase, and been worried about editing existing styles, you can sympathise with this.
+## 到底什麼是「模組化 (modular)」？
 
-## What does modular even mean?
+模組是獨特的、獨立的單位，能夠互相結合而成為一個更複雜的結構。想像你在客廳裡，電視、沙發、壁飾都是模組，而結合在一起時成為一個有用的房間。
 
-A module is a distinct, independent unit, that can be combined with other modules to form a more complex structure. In a living room, you can consider the TV, the sofa and the wall art to be modules, all coming together to create a useable room.
+如果你把其中一個單位拿走，其他仍然正常運作。我沒必要有電視才可以坐在沙發上。在網站裡，標題、頁尾、產品列表、文章等等都可以視為模組。
 
-If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc. In a website, the header, footer, product list, article etc can all be considered modules.
+## 誰適合用？
 
-## Who is this for?
+如果你曾經苦於維護 CSS，這本書可以幫助你避開常見的問題。不管你是一人還是 100 人的團隊，我認為你可以在此找到好用的建議。如果你的網站經常升級，那就更有用了。
 
-If you have ever experienced pain in maintaining CSS, this book can help you avoid common problems. Whether you're in a team of 1 or 100, I think you will find useful advice in this book. Even more so if your site is constantly evolving.
+## 學習這一套很難嗎？
 
-## How hard is this to learn?
-
-I would say it's very easy to learn. You can read the entire book in under 20 minutes and apply the rules in minutes. Let me know if I am wrong though :).
+我可以保證這很容易學習。這整本書只要 20 分鐘就可以讀完，且立即開始套用這些規則。不過，我錯的話請跟我說。 :)
