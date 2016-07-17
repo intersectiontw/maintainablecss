@@ -1,12 +1,12 @@
 ---
 layout: chapter
-title: Reuse
+title: 重複使用 (Reuse)
 section: Background
 permalink: /chapters/reuse/
 description: Learn why avoding reuse and embracing repetition makes CSS maintenance easier.
 ---
 
-**Summary:** Don't try and reuse styles. Adopt a duplication-first approach.
+**長話短說：** 不要試著將樣式重複利用。採用複製優先 (duplication-first) 的做法。
 
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>

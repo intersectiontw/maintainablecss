@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Organisation
+title:  組織 (Organisation)
 section: Extras
 permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.

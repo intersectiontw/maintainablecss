@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Modules
+title: 模組 (Modules)
 section: Core
 permalink: /chapters/modules/
 description: Learn the differences between modules and components and how to identify them within a design. We'll also code up some example modules together.

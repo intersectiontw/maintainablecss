@@ -1,42 +1,46 @@
 ---
 layout: chapter
-title: Semantics
+title: 語意化 (Semantics)
 section: Background
 permalink: /chapters/semantics/
-description: Why naming something based on what it is, instead of how it looks or behaves is a cornerstone of writing well architected and maintainable CSS code.
+description: 為何要依據它是什麼而取名，而不是他的外表，或是可以進行什麼動作。這是撰寫良好架構與易於維護 CSS 程式碼的基礎。
 ---
 
-**Summary:** Name something based on what it *is*, not how it *looks* or *behaves*.
+**長話短說:** 依照它**是什麼**命名，而不是**長相如何**或**可以做什麼**。 
 
-## The longer explanation
+## 短話長說
 
-Semantic HTML isn't just about the elements we use&mdash;it's pretty obvious that you should use a `<a>` for a link, a `<table>` for tabular data and a `<p>` for a paragraph etc.
+語意化 HTML (Semantic HTML) 不只關於我們如何使用元素 (elements) — 它很直覺，例如超連結就要用 `<a>`；表格呈現的資料就要用 `<table>`；一個段落就要用 `<p>`⋯等等。
 
+更重要的是，它還關係到我們增加的樣式名稱（與 ID），它們提供**額外**與 CSS（和 Javascript）的連結，能夠適當強化功能。
 More importantly, it's about the class names (and IDs) we add, that provide *additional* hooks for CSS (and Javascript) to enhance as appropriate.
 
+說到命名，很多人容易不經思考就增加樣式名稱，但是命名非常重要。
 It's easy to add class names without thought as to their naming but naming is very important.
 
-> &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
+> 「資訊科學裡只有兩件難事：Cache Invalidation 和命名。」
 <br>&mdash; <cite>Phil Karlton</cite>
 
-This is because humans are good at understanding human communication and bad at understanding abbreviated, non-semantic abstractions.
+這是因為人類擅長於理解與人類的溝通，但是不擅於理解縮寫的、沒有情境的抽象物品。
 
-## Good and bad examples of class names
+## 好與不好的樣式名稱範例
 
-Try and spot the difference between non-semantic and semantic class names...
+試著找出非情境式與情境式樣式名稱之間的不同⋯
 
-	<!-- bad -->
+	<!-- 不好 -->
 	<div class="red pull-left">
 	<div class="grid row">
 	<div class="col-xs-4">
 
-It's not clear at all *what* this HTML represents. You *might* have an *idea* of what these things *look like* (on small or large screens) but that is all.
+這樣完全不清楚這些 HTML *代表*的意義。*可能*可以*知道*這些東西看起來如何（在小或大的螢幕），但是頂多就這樣。
 
-	<!-- good -->
+	<!-- 好 -->
 	<div class="header">
 	<div class="basket">
 	<div class="product">
 	<div class="searchResults">
+
+這裡我就很清楚知道我在看什麼。我知道這些 HTML 所代表要做的事情。
 
 Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS (and JS).
 

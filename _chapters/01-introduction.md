@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Introduction
+title: 簡介
 section: Preface
 permalink: /chapters/introduction/
 description: An introduction to MaintainableCSS, an approach to writing modular, scalable and of course maintainable CSS.
@@ -14,15 +14,15 @@ description: An introduction to MaintainableCSS, an approach to writing modular,
 
 *MaintainableCSS* 不是你能夠下載的東西。這是可以幫助你為大型或小型網站撰寫 CSS 的原則、準則和通則。
 
-## 到底什麼是「可維護性 (maintainable)」？
+## 到底什麼是「可維護的 (maintainable)」？
 
 如果程式碼是「可維護的」，代表我可以修改一個模組和它的樣式，而不用擔心會意外造成其他模組的負面影響。我想要能夠撰寫心平氣和，對於分裝情況瞭若指掌的程式碼。
 
-## 到底什麼是「可擴張性 (scalable)」？
+## 到底什麼是「可擴張的 (scalable)」？
 
 這代表，即使 CSS 程式碼的份量逐漸變大，維護（請見上一條）起來卻沒有更困難。如果你曾經接手一個很龐大的 CSS 程式碼，會擔心修改到既有的樣式，即會深感認同。
 
-## 到底什麼是「模組化 (modular)」？
+## 到底什麼是「模組化的 (modular)」？
 
 模組是獨特的、獨立的單位，能夠互相結合而成為一個更複雜的結構。想像你在客廳裡，電視、沙發、壁飾都是模組，而結合在一起時成為一個有用的房間。
 

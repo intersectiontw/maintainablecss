@@ -466,12 +466,12 @@ a.chapterNavigation-next:active {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 15px 70px;
-	font-size: 1.3em;
+	font-size: 1.25em;
 	border: 3px solid #7FDBFF;
 	color: #7FDBFF;
 	font-weight: bold;
 	letter-spacing: 0.04em;
-	width: 100px;
+	width: 120px;
 	margin: 0 auto;
 	display: block;
 	text-align: center;

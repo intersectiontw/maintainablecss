@@ -8,8 +8,12 @@ id: home
 	<img class="hero-logo" src="/assets/img/logo.png" width="250" height="250">
 
 	<h1>MaintainableCSS</h1>
-	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. <em>MaintainableCSS</em> is an approach to writing <em>modular</em>, <em>scalable</em> and of course, <em>maintainable</em> CSS.</p>
-	<a class="hero-button" href="/chapters/introduction/">Read now</a>
+	<p>撰寫不用擔心一團混亂，還有先前樣式造成問題的 CSS。<em>MaintainableCSS</em> 是一種以模組化、可擴張，當然還有可維護的方法撰寫 CSS。
+	</p>
+	
+	<a class="hero-button" href="/chapters/introduction/">開始閱讀</a>
+
+
 </div>
 <!--
 	<h2>Maintainable &mdash; Adjective</h2>
