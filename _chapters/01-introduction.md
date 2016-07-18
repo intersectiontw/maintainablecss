@@ -6,13 +6,13 @@ permalink: /chapters/introduction/
 description: An introduction to MaintainableCSS, an approach to writing modular, scalable and of course maintainable CSS.
 ---
 
-*MaintainableCSS* 是 CSS 的架構規劃和寫作方式，幫助你和團隊撰寫模組化的、可擴張的，和可維護的程式碼。
+**MaintainableCSS** 是 CSS 的架構規劃和寫作方式，幫助你和團隊撰寫模組化的、可擴張的，和可維護的程式碼。
 
 實際上的做法來說，身為一個開發者，我想要開個新功能、修改現有的功能，可以不用擔心蓋掉本來沒要換的樣式，甚至更糟的是我寫的程式碼在其他地方讓進度倒退。
 
 ## 沒有可以下載的東西
 
-*MaintainableCSS* 不是你能夠下載的東西。這是可以幫助你為大型或小型網站撰寫 CSS 的原則、準則和通則。
+**MaintainableCSS** 不是你能夠下載的東西。這是可以幫助你為大型或小型網站撰寫 CSS 的原則、準則和通則。
 
 ## 到底什麼是「可維護的 (maintainable)」？
 
@@ -20,7 +20,7 @@ description: An introduction to MaintainableCSS, an approach to writing modular,
 
 ## 到底什麼是「可擴張的 (scalable)」？
 
-這代表，即使 CSS 程式碼的份量逐漸變大，維護（請見上一條）起來卻沒有更困難。如果你曾經接手一個很龐大的 CSS 程式碼，會擔心修改到既有的樣式，即會深感認同。
+這代表即使 CSS 程式碼的份量逐漸變大，維護（請見上一條）起來卻沒有更困難。如果你曾經接手一個很龐大的 CSS 程式碼，會擔心修改到既有的樣式，即會深感認同。
 
 ## 到底什麼是「模組化的 (modular)」？
 

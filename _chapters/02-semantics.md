@@ -3,36 +3,34 @@ layout: chapter
 title: 語意化 (Semantics)
 section: Background
 permalink: /chapters/semantics/
-description: 為何要依據它是什麼而取名，而不是他的外表，或是可以進行什麼動作。這是撰寫良好架構與易於維護 CSS 程式碼的基礎。
+description: 為何要依據它是什麼而取名，而不是它的外表或行為。這是撰寫良好架構與易於維護 CSS 程式碼的基礎。
 ---
 
-**長話短說:** 依照它**是什麼**命名，而不是**長相如何**或**可以做什麼**。 
+**長話短說：** 依照它**是什麼**命名，而不是**長相如何**或**可以做什麼**。 
 
 ## 短話長說
 
 語意化 HTML (Semantic HTML) 不只關於我們如何使用元素 (elements) — 它很直覺，例如超連結就要用 `<a>`；表格呈現的資料就要用 `<table>`；一個段落就要用 `<p>`⋯等等。
 
-更重要的是，它還關係到我們增加的樣式名稱（與 ID），它們提供**額外**與 CSS（和 Javascript）的連結，能夠適當強化功能。
-More importantly, it's about the class names (and IDs) we add, that provide *additional* hooks for CSS (and Javascript) to enhance as appropriate.
+更重要的是，它還關係到我們自行增加的樣式名稱（與 ID），它們提供**額外**與 CSS（和 Javascript）的連結，能夠適當強化功能。
 
 說到命名，很多人容易不經思考就增加樣式名稱，但是命名非常重要。
-It's easy to add class names without thought as to their naming but naming is very important.
 
-> 「資訊科學裡只有兩件難事：Cache Invalidation 和命名。」
+> 「資訊科學裡只有兩件難事：快取無效和命名。」
 <br>&mdash; <cite>Phil Karlton</cite>
 
 這是因為人類擅長於理解與人類的溝通，但是不擅於理解縮寫的、沒有情境的抽象物品。
 
 ## 好與不好的樣式名稱範例
 
-試著找出非情境式與情境式樣式名稱之間的不同⋯
+試著找出非語意化和語意化樣式名稱之間的不同⋯
 
 	<!-- 不好 -->
 	<div class="red pull-left">
 	<div class="grid row">
 	<div class="col-xs-4">
 
-這樣完全不清楚這些 HTML *代表*的意義。*可能*可以*知道*這些東西看起來如何（在小或大的螢幕），但是頂多就這樣。
+這樣完全不清楚這些 HTML **代表**的意義。**可能**可以**知道**這些東西看起來如何（在小或大的螢幕），但是頂多就這樣。
 
 	<!-- 好 -->
 	<div class="header">
@@ -40,71 +38,73 @@ It's easy to add class names without thought as to their naming but naming is ve
 	<div class="product">
 	<div class="searchResults">
 
-這裡我就很清楚知道我在看什麼。我知道這些 HTML 所代表要做的事情。
+這裡就很清楚知道在看什麼；我知道這些 HTML 代表要做的事情，雖然不知道它看起來怎麼樣，但這是 CSS 要負責的。語意化的樣式名稱對 HTML 和 CSS（還有 JS）都很重要。
 
-Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS (and JS).
-
-So **why** else should we use semantic class names?
+所以，還有**什麼理由**我們應該使用語意化樣式名稱？
 
 ## Because it's easier to understand.
 
 Whether you're looking at the HTML or the CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vague understanding of the intention of these visual class names. This is hard to maintain.
 
-## Because we are building responsive websites.
+## 因為它易懂
 
-Styles often need changing based on viewport size. For example, you might float elements on big screens and not on small screens. So if you have a class called `clearfix` but you don't clear on small screens, then you now have misleading code.
+不管你正在看 HTML 還是 CSS，你知道正在改什麼東西。如果使用視覺的樣式名稱，你最後得要在每一個元素都灑下一些令人混淆，以視覺命名的樣式名稱。這樣很難進行維護。
 
-If you use semantic class names, then you can style them differently based on media queries making it easier to maintain.
+## 因為我們正在打造響應式網站
 
-## Because semantic class names are easier to find.
+因為螢幕 (viewport) 的大小不同，樣式必須據此進行變化。舉例來說，你可能要在大螢幕將元素設定為 float，但是在小螢幕不用。所以如果你有一組稱為 `clearfix` 的樣式，但是沒有要在小螢幕這樣做，那在眼前的就是一組容易誤導的程式碼。
 
-If an element has classes based on how it looks such as `.red`, `clearfix` and `.pull-left`, then these classes will be scattered all over the codebase&mdash;so if you’re trying to hunt for a particular piece of HTML, the class name is not going to help you.
+如果使用語意化樣式名稱，你就可以從 Media querues（媒體查詢）進行不同的樣式設定，很容易進行維護。
 
-On the other hand, if your class names are semantic, a search will find the HTML in question. Or more typically, if you're beginning your search via the HTML (think: inspecting an element) then finding unique CSS selectors based on the class name will be far easier.
+## 因為語意化樣式名稱更容易找到
 
-## Because you don't want unexpected regression.
+如果某個元素的樣式名稱是根據外觀，例如 `.red`、`.clearfix` 和 `.pull-left`，那麼這些樣式名稱就散佈在整份程式碼。所以如果你正在尋覓一小段 HTML，樣式名稱就完全幫不上忙。
 
-If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propagate to every single element with that class. Knowing CSS as you do, do you feel comfortable that the propagation didn't cause unexpected problems elsewhere?
+反過來說，如果樣式名稱是語意化的，搜尋一下就會發現該 HTML。或是更常見的情況：如果你是先從搜尋 HTML 開始（試想：檢查某個元素），那麼以樣式名稱找到獨特的 CSS Selector 更是非常容易。
 
-Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintenance easier.
+## 因為你不想要無故讓進度退後
 
-## Because you don't want to be afraid to update code.
+如果採用非語意化的樣式，用外觀來描述，那麼當你修改某個樣式的時候，每一個用上該樣式的元素都會受到影響。像你這樣熟知 CSS 的人，難道不覺得 CSS 的樣式傳遞，不在其他地方造成意外問題的情況很舒服嗎？
 
-Directly linked with the previous point about regression, when you don't feel comfortable touching code, you end up causing problems or being afraid to touch it at all. Therefore you end up with redundant code, increasing maintenance issues.
+語意化的樣式名稱都是獨特的，所以在修改的時候，會因為任何更動只影響你要改的模組，而感到舒適，也讓維護更容易。
 
-## Because it helps automated functional testing.
+## 因為你不想要懼怕升級程式碼
 
-Automated functional tests work by searching for particular elements, interacting with them (typing in text, clicking buttons and links etc) and verifying based on that.
+跟前面一項讓進度倒退有直接關聯 ，當接觸程式碼讓你感覺不舒服時，就會產生問題，或是懼怕去碰它。所以，最後就產生冗長的程式碼，增加維護方面的問題。
 
-If you have visual class names all over the HTML, then there is no reliable way to target particular elements and act upon them.
+## 因為它對自動化功能測試有幫助
 
-## Because it provides meaningful hooks for Javascript to enhance.
+自動化功能測試以尋找特定的元素運作，與它們互動（輸入文字、按下按鈕或超連結等）並且也依此驗證。
 
-Just like these hooks help automated testing, they are also useful to enhance behaviour with Javascript. Visual class names can't be used as a reliable way to target modules or components.
+如果整份 HTML 用外觀的樣式名稱，那就沒有可靠的方法瞄準特定的元素，對它們進行動作。
 
-## Because of general maintenance concerns.
+## 它為 Javascript 提供有意義的連結，得以強化功能
 
-If you name something based on what it is, you won't have to touch the HTML again i.e. a heading is always a heading, no matter what it *looks* like.
+就像這些連結對自動化測試有幫助，對於依靠 Javascript 強化的功能也很有用。以外觀命名的樣式名稱無法成為瞄準模組或元件的可靠方法。
 
-The styling might change but you only have to update the CSS. This is otherwise known as Loose Coupling and this improves maintainability.
+## 因為一般維護很重要
 
-## Because utility classes increase noise when debugging.
+如果根據它是什麼而命名，之後就不用再碰 HTML 了。例如：標題永遠是標題，不管它**看起來**是怎麼樣。
 
-When debugging an element, there will be several applicable CSS selectors making it noisey to debug.
+樣式可能會變化，但是你只要更新 CSS 即可。這也稱呼為鬆散耦合 (Loose Coupling)，增加可維護性。
 
-## Because the standards recommend it.
+## 因為工具型 (utility) 的樣式增加除錯時的干擾
 
-On using the class attribute, HTML5 specs say in 3.2.5.7:
+在為一個元素除錯時，會出現好幾個也符合條件的 CSS Selector，讓除錯時出現干擾。
 
-> "[...] authors are encouraged to use values that describe the nature of the content, rather than values that describe the desired presentation of the content."
+## 因為標準建議這麼做
 
-## Because you get a performance bump.
+在 HTML5 的規格手冊 3.2.5.7 章節提到樣式屬性：
 
-This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element and that can add up.
+> 「[...] 建議編寫人員以描述該內容用途的方式使用樣式，而不是描述該內容想要如何呈現。」
 
-## Because it adheres to the reuse rule.
+## 因為效能會大幅降低
 
-If you don't use semantic class names, then you will likely be breaking the rules of reuse. Read the next chapter to find out more.
+這個好處**微不足道**，但是每個元素都只用一個樣式名稱，HTML 就會小一些。使用外觀樣式名稱，最後每個元素都會有非常多樣式，而且還可以持續增加。
+
+## 因為它符合重複利用的規則
+
+如果沒有使用語意化的樣式名稱，你就會違反重複利用 (Reuse) 的規則。詳細請見下一章。
 
 <!--## Why? Because visual class names might declare the same property!
 
@@ -113,6 +113,6 @@ It's likely that several different utility classes could refer to the same prope
 Think of an example of this.
 -->
 
-## Final thoughts about semantics
+## 一些對於語意化的結尾感想
 
-Semantic class names are a corner stone of *MaintainableCSS*. Without this, everything else makes little sense. So name something based on what it is and everything else follows.
+語意化樣式名稱是 **MaintainableCSS** 的基石。沒有做這件事的話，其他部份就沒有什麼意義了。只要根據它是什麼命名，其他就會自然跟上。
