@@ -42,10 +42,6 @@ description: 為何要依據它是什麼而取名，而不是它的外表或行�
 
 所以，還有**什麼理由**我們應該使用語意化樣式名稱？
 
-## Because it's easier to understand.
-
-Whether you're looking at the HTML or the CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vague understanding of the intention of these visual class names. This is hard to maintain.
-
 ## 因為它易懂
 
 不管你正在看 HTML 還是 CSS，你知道正在改什麼東西。如果使用視覺的樣式名稱，你最後得要在每一個元素都灑下一些令人混淆，以視覺命名的樣式名稱。這樣很難進行維護。
