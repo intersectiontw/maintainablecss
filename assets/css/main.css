@@ -293,7 +293,8 @@ a.navigation-isActive {
 }
 
 .content blockquote {
-	font-style: italic;
+	/*font-style: italic;*/
+	font-weight: bold;
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
@@ -443,7 +444,7 @@ a.chapterNavigation-next:active {
 }
 
 .hero p {
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 1.8em;
 	line-height: 1.7em;
 	max-width: 620px;
@@ -466,7 +467,7 @@ a.chapterNavigation-next:active {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 15px 70px;
-	font-size: 1.25em;
+	font-size: 1.375em;
 	border: 3px solid #7FDBFF;
 	color: #7FDBFF;
 	font-weight: bold;
