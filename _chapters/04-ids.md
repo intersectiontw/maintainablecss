@@ -14,7 +14,7 @@ description: 學習為何用 ID 當作設定樣式的連結會造成許多問題
 
 根據權重順序，[ID 的優先權高於樣式](http://www.w3.org/TR/css3-selectors/#specificity)。因此，樣式名稱 (style names)裡的設定無法輕易蓋過在 ID 裡的。
 
-當你需要對 HTML 加上額外的意義時，例如狀態，這就會造成問題，這部分我專門寫了一章進行討論。
+當你需要對 HTML 加上額外的意義時，例如狀態語法，這就會造成問題，這部分我專門寫了一章進行討論。
 
 	#someModule {
 	    color: red;

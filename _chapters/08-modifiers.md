@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Modifiers
+title: 修飾語法 (Modifiers)
 section: Core
 permalink: /chapters/modifiers/
 description: Use modifiers to change appearance based on slight differences.

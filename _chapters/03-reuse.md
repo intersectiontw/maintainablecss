@@ -3,7 +3,7 @@ layout: chapter
 title: 重複使用 (Reuse)
 section: Background
 permalink: /chapters/reuse/
-description: Learn why avoding reuse and embracing repetition makes CSS maintenance easier.
+description: 學習為什麼要避免重複使用 (reuse)，並且採用能讓 CSS 更易於維護的循環使用 (repetition)。
 ---
 
 **長話短說：** 不要試著將樣式重複使用。採用複製優先 (duplication-first) 的做法。
