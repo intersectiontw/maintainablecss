@@ -16,7 +16,7 @@ description: An introduction to MaintainableCSS, an approach to writing modular,
 
 ## 到底什麼是「可維護的 (maintainable)」？
 
-如果程式碼是「可維護的」，代表我可以修改一個模組和它的樣式，而不用擔心會意外造成其他模組的負面影響。我想要能夠撰寫心平氣和，對於分裝情況瞭若指掌的程式碼。
+如果程式碼是「可維護的」，代表我可以修改一個模組和它的樣式，而不用擔心會意外造成其他模組的負面影響。我想要能夠撰寫心平氣和，對於分裝 (encapsulation) 情況瞭若指掌的程式碼。
 
 ## 到底什麼是「可擴張的 (scalable)」？
 
