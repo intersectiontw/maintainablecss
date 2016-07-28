@@ -108,7 +108,6 @@ It's likely that several different utility classes could refer to the same prope
 
 Think of an example of this.
 -->
-
-## 一些對於語意化的結尾感想
+## 關於「語意化」的結尾想法
 
 語意化樣式名稱是 **MaintainableCSS** 的基石。沒有做這件事的話，其他部份就沒有什麼意義了。只要根據它是什麼命名，其他就會自然跟上。
