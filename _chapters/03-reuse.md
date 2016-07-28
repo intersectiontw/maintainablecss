@@ -142,7 +142,7 @@ If you strive to reuse the bits inbetween the curly braces to create "atomic" cl
 
 ## 因為重複使用破壞語意化
 
-如果你用盡可能把大括弧內的每一行都做成可重複使用，也就是「原子 (atom)」樣式名稱，那就會遭遇到所有在[語意化](/chapters/semantics/)章節說過的問題。如果你還沒有準備好，現在就先去讀那一章。
+如果你用盡可能把大括弧內的每一行都做成可重複使用，也就是「基礎」樣式名稱 ("atomic" class names)，那就會遭遇到所有在[語意化](/chapters/semantics/)章節說過的問題。如果你還沒有準備好，現在就先去讀那一章。
 
 ## What if I really want to reuse a style?
 

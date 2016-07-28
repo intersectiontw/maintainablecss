@@ -100,7 +100,7 @@ description: 為何要依據它是什麼而取名，而不是它的外表或行�
 
 ## 因為它符合重複利用的規則
 
-如果沒有使用語意化的樣式名稱，你就會違反重複利用 (Reuse) 的規則。詳細請見下一章。
+如果沒有使用語意化的樣式名稱，你就會違反重複利用 (reuse) 的規則。詳細請見下一章。
 
 <!--## Why? Because visual class names might declare the same property!
 
