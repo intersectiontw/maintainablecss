@@ -20,7 +20,7 @@ But it is likely that `isActive` is going to be used in many different modules, 
 
 For this reason, state must be prefixed with the module (or component) it pertains to...
 
-## 「分裝」狀態 (Encapsulating state)
+## 「封裝」狀態 (encapsulating state)
 
 假設有個模組稱之為 **myModule**。就套用稱為 `isActive` 的樣式，如以下程式碼：
 

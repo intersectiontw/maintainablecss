@@ -26,7 +26,7 @@ id: home
 	<h2>MaintainableCSS 的優點</h2>
 	<div class="benefits-wrapper">
 		<div class="benefit">
-			<h3>模組化、分裝 (encapsulated) 的</h3>
+			<h3>模組化、封裝 (encapsulated) 的</h3>
 			<p>樣式不會未經同意越過界，也不會影響到下個階層。</p>
 		</div>
 		<div class="benefit">
