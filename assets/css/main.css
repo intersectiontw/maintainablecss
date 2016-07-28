@@ -714,7 +714,8 @@ a.chapterNavigation-next:active {
 }
 
 .recommendations-item {
-	font-style: italic;
+	/*font-style: italic;*/
+	font-weight: bold;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 30px;

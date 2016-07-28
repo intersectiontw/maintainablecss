@@ -3,27 +3,26 @@ layout: chapter
 title: 慣例 (Conventions)
 section: Core
 permalink: /chapters/conventions/
-description: Learn the simple conventions that MaintainableCSS employs to write modules, components and state.
+description: 學習 MaintainableCSS 採用之撰寫模組、元件與狀態語法的簡易慣例。
 ---
 
-Conventions can be a bone of contention amongst engineers, but what matters most is readability and consistency. With that said, *MaintainableCSS* has the following convention:
+慣例（或是共識）是工程師之間爭辯的來源，其中最重要的就是可讀性與一致性。因此，**MaintainableCSS** 採用以下這些慣例：
 
-	/* Square brackets denote optional parts */
+	/* 方形括號代表任選 (optional) */
 	.<moduleName>[-<componentName>][-<state>] {}
 
-Here are some real examples pertaining to a "search results" module:
+這裡是一些「搜尋結果」實際情況的範例：
 
-	/* module container/root */
+	/* 模組語法的容器或最上層 */
 	.searchResults {}
 
-	/* components of a module */
+	/* 模組的元件 */
 	.searchResults-heading {}
-
 	.searchResults-item {}
 
-	/* state: such as AJAX loading */
+	/* 狀態語法：例如描述 AJAX 讀取中 */
 	.searchResults-isLoading {}
 
-Each of these class names are semantic. Module, component and state are all delimitted by dashes. Each bit is written in lowerCamelCase.
+每一個樣式名稱都是語意化的；模組、元件與狀態都以橫槓隔開；都以小駝峰式命名法 (lowerCamelCase) 方式區分大小寫。
 
-We will see this convention used in all upcoming chapters.
+這些慣例在接下來所有章節都會看到。
