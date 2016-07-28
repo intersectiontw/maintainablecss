@@ -50,7 +50,7 @@ Here are some states we might need to apply to `myModule`.
 
 And the HTML needs to be as follows:
 
-HTML 會這樣子撰寫：
+HTML 得要這樣子撰寫：
 
 	<div class="myModule myModule-isDisabled">
 	    <p class="myModule-title">
