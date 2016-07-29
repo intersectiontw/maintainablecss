@@ -1,5 +1,6 @@
-# MaintainableCSS
+# MaintainableCSS 正體中文
 
-Write CSS without worrying that overzealous, pre-existing styles will cause problems. MaintainableCSS is an approach to writing modular, scalable and of course, maintainable CSS.
+撰寫不用擔心一團混亂、顧慮先前樣式造成問題的 CSS。 MaintainableCSS is an approach to writing modular, scalable and of course, maintainable CSS.
 
-[Visit website](http://maintainablecss.com)
+[英文版](http://maintainablecss.com)
+[正體中文版](http://intersectiontw.github.io/maintainablecss)
