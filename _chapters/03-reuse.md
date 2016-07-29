@@ -2,7 +2,7 @@
 layout: chapter
 title: 重複使用 (Reuse)
 section: Background
-permalink: /chapters/reuse/
+permalink: /maintainablecss/chapters/reuse/
 description: 學習為什麼要避免重複使用 (reuse)，並且採用能讓 CSS 更易於維護的循環使用 (repetition)。
 ---
 

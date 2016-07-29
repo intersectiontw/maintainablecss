@@ -2,7 +2,7 @@
 layout: chapter
 title: 修飾語法 (Modifiers)
 section: Core
-permalink: /chapters/modifiers/
+permalink: /maintainablecss/chapters/modifiers/
 description: 使用修飾語法，改變只有一些些不同的外觀。
 ---
 

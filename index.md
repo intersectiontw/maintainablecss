@@ -5,7 +5,7 @@ id: home
 
 <div class="hero">
 
-	<img class="hero-logo" src="/assets/img/logo.png" width="250" height="250">
+	<img class="hero-logo" src="/maintainablecss/assets/img/logo.png" width="250" height="250">
 
 	<h1>MaintainableCSS</h1>
 	<p>
@@ -13,7 +13,7 @@ id: home
 		<b>MaintainableCSS</b> 是一種以模組化、可擴張，當然還有可維護的方法撰寫 CSS。
 	</p>
 	
-	<a class="hero-button" href="/chapters/introduction/">開始閱讀</a>
+	<a class="hero-button" href="/maintainablecss/chapters/introduction/">開始閱讀</a>
 
 
 </div>
@@ -83,7 +83,7 @@ id: home
 			<h3>AB 測試與輕鬆升級</h3>
 			<p>想要互相測試模組變數嗎？<br>MaintainableCSS 會讓它變得很容易。</p>
 		</div>
-		<a class="benefit-readNowButton" href="/chapters/introduction">開始閱讀</a>
+		<a class="benefit-readNowButton" href="/maintainablecss/chapters/introduction">開始閱讀</a>
 	</div>
 </div>
 <div class="recommendations">

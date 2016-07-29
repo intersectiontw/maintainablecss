@@ -2,7 +2,7 @@
 layout: chapter
 title: Javascript
 section: Extras
-permalink: /chapters/javascript/
+permalink: /maintainablecss/chapters/javascript/
 description: 如何同時撰寫可維護的 CSS 和 Javascript。
 ---
 
