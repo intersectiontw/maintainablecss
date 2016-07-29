@@ -2,7 +2,7 @@
 layout: chapter
 title: 模組語法 (Modules)
 section: Core
-permalink: /chapters/modules/
+permalink: /maintainablecss/chapters/modules/
 description: 學習模組與元件語法之間的差別，還有如何在設計裡找出它們。我們也會撰寫一些示範程式碼。
 ---
 

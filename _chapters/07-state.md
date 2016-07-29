@@ -2,7 +2,7 @@
 layout: chapter
 title: 狀態語法 (State)
 section: Core
-permalink: /chapters/state/
+permalink: /maintainablecss/chapters/state/
 description: 學習如何根據狀態提供模組和元件不同的樣式，例如顯示、隱藏和讀取中。
 ---
 

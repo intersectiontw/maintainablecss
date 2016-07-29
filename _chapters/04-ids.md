@@ -2,7 +2,7 @@
 layout: chapter
 title: IDs
 section: Background
-permalink: /chapters/ids/
+permalink: /maintainablecss/chapters/ids/
 description: 學習為何用 ID 當作設定樣式的連結會造成許多問題，還有正確的替代方案。
 ---
 

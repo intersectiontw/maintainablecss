@@ -2,7 +2,7 @@
 layout: chapter
 title: 版本控制 (Versioning)
 section: Extras
-permalink: /chapters/versioning/
+permalink: /maintainablecss/chapters/versioning/
 description: 學習 MaintainableCSS 如何在快速演變的網站裡，讓模組升級以及 AB 測試變得非常簡單。
 ---
 
