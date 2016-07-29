@@ -6,13 +6,7 @@ permalink: /chapters/organisation/
 description: 學習如何整理 CSS 檔案。
 ---
 
-*Discoverability* is an important part of writing maintainable stylesheets and this becomes more important as a project grows in size over time. There are two approaches to consider. Let's discuss each in turn.
-
 **可探索性 (Discoverability)** 是撰寫可維護樣式的時候，很重要的一部分，當專案隨著時間成長，它就會越來越重要。這時候有兩種做法可以考慮，我們依序進行討論。
-
-## 1. CSS in a single folder
-
-This approach places all CSS inside a single folder within your project:
 
 ## 一、在單一資料夾放置 CSS
 
@@ -25,21 +19,11 @@ This approach places all CSS inside a single folder within your project:
 	        global.css
 	        basket.css
 
-Third-party CSS files live under `/vendor` while the CSS you write should live under `/yourApp` where *yourApp* is the name of your project.
-
-This approach normally simplifies the deployment process because typically, the act of bundling, compressing and other such tasks, are applied to a single target directory.
-
-This is the approach I have used most often, but that does not mean it's necessarily the best.
-
 第三方的 CSS 檔案放在 `/vendor` 資料夾，而你自行撰寫的 CSS 應該放在 `/yourApp`。這裡的 **/yourApp** 代表這個專案的名稱。
 
 這個方法通常可以簡化配置流程，因為一般來說，bundling、壓縮和其他類似的任務都採用單一的目標資料夾。
 
 這是我最常使用的做法，但是不代表這就是最好的。
-
-## 2. CSS in separate module folders
-
-This approach places module-specific CSS within module folder encapsulating all the related functionality under one roof:
 
 ## 二、根據模組資料夾放置 CSS
 
@@ -61,17 +45,11 @@ This approach places module-specific CSS within module folder encapsulating all 
 	/header
 	  ...
 
-If you, like me have used the first approach for a long time, this way of doing things can seem strange at first, but it's really nice to work with.
-
 如果你跟我一樣，一直以來都在用第一種方式，這個做法一開始會覺得很詭異，但是它真的很方便。
-
-### But what about global CSS?
-
-You'll need a folder for global CSS or global stuff in general:
 
 ### 那全域 CSS 怎麼辦呢？
 
-你得用一個資料夾放置全域 CSS，或是一般常用的語法。
+你得用一個資料夾放置全域 CSS，或是一般常用的語法：
 
 	/global
 	  /css
@@ -82,22 +60,6 @@ You'll need a folder for global CSS or global stuff in general:
 	  ...as above...
 	/header
        ...
-
-## The 31 CSS file limit problem
-
-Whatever approach you decide, make sure you're aware of the 31 CSS file limit problem.
-
-Some browsers, such as IE9, will ignore styles that are included in the 32nd file (or above). For production this is fine, because you should be bundling your CSS to reduce the amount HTTP requests, but for local development you normally want to work on the source files for easy debugging.
-
-If you **have a compilation step** for local development&mdash;as would be the case if you're using a CSS preprocessor&mdash;you don't need to worry, because your files will be bundled up into one during development.
-
-If you **don't have a compilation** step for local development&mdash;because debugging source files is easier this way&mdash;then you may have to address this. Your options are as follows:
-
-The *first* option would be to introduce a compilation step i.e. mimick what you're doing for production, so you can&mdash;where necessary&mdash;debug in offending browsers.
-
-The *second* option would be to make sure you don't go over 31 files. Choosing this option probably means you can't take the second, modular approach (described above) because most websites will require more than 31 modules.
-
-If you decide to limit the amount of CSS files you will need to work out how best to group modules into a single CSS folder. As an example, I recently grouped *deliveryAddress*, *paymentDetails* and *orderConfirmation* modules within the `checkout.css` file.
 
 ## 31 個 CSS 檔案的問題
 
