@@ -3,7 +3,7 @@ layout: chapter
 title: 簡介
 section: Preface
 permalink: /chapters/introduction/
-description: An introduction to MaintainableCSS, an approach to writing modular, scalable and of course maintainable CSS.
+description: 為你介紹 MaintainableCSS，一種撰寫模組化、可擴張，當然還有可維護 CSS 的方法
 ---
 
 **MaintainableCSS** 是 CSS 的一種架構規畫和寫作風格，幫助你和團隊撰寫模組化的、可擴張的，和可維護的程式碼。
