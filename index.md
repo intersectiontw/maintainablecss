@@ -8,8 +8,14 @@ id: home
 	<img class="hero-logo" src="/assets/img/logo.png" width="250" height="250">
 
 	<h1>MaintainableCSS</h1>
-	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. <em>MaintainableCSS</em> is an approach to writing <em>modular</em>, <em>scalable</em> and of course, <em>maintainable</em> CSS.</p>
-	<a class="hero-button" href="/chapters/introduction/">Read now</a>
+	<p>
+		撰寫不用擔心一團混亂、顧慮先前樣式造成問題的 CSS。
+		<b>MaintainableCSS</b> 是一種以模組化、可擴張，當然還有可維護的方法撰寫 CSS。
+	</p>
+	
+	<a class="hero-button" href="/chapters/introduction/">開始閱讀</a>
+
+
 </div>
 <!--
 	<h2>Maintainable &mdash; Adjective</h2>
@@ -17,93 +23,95 @@ id: home
 -->
 
 <div class="benefits">
-	<h2>Benefits of MaintainableCSS</h2>
+	<h2>MaintainableCSS 的優點</h2>
 	<div class="benefits-wrapper">
 		<div class="benefit">
-			<h3>Modular and encapsulated</h3>
-			<p>Styles don't bleed or cascade without your permission.</p>
+			<h3>模組化、封裝 (encapsulated) 的</h3>
+			<p>樣式不會未經同意越過界，也不會影響到下個階層。</p>
 		</div>
 		<div class="benefit">
-			<h3>Any design requirements</h3>
-			<p>Completely flexible to your needs.</p>
+			<h3>任何設計需求</h3>
+			<p>完全針對你的需求彈性調整。</p>
 		</div>
 		<div class="benefit">
-			<h3>No tooling required</h3>
-			<p>But you can use tooling if you want to.</p>
+			<h3>不需要輔助工具</h3>
+			<p>但是你想要的話，仍然可以使用輔助工具。</p>
 		</div>
 		<div class="benefit">
-			<h3>Easy to learn</h3>
-			<p>Read the guides and see.</p>
+			<h3>容易學習</h3>
+			<p>你看了就知道。</p>
 		</div>
 		<div class="benefit">
-			<h3>Any size project</h3>
-			<p>Whatever size project you have, <em>MaintainableCSS</em> will help.</p>
+			<h3>任何大小的專案</h3>
+			<p>不管你手上的專案有多大，<b>MaintainableCSS</b> 都很有用。</p>
 		</div>
 		<div class="benefit">
-			<h3>Upgrade in your own time</h3>
-			<p>You can start applying the approach today, bit by bit. You don't need to upgrade the whole project in one go.</p>
+			<h3>自行決定採用時機</h3>
+			<p>現在就可以套用這個做法，一點一點加入。<br>不必一口氣把專案升級。</p>
 		</div>
 		<div class="benefit">
-			<h3>No problems of specificity</h3>
-			<p>Avoid problems of specificity and override hell. Write CSS as if you always have a blank canvas.</p>
+			<h3>沒有優先權的問題</h3>
+			<p>避免優先權與強制覆蓋的地獄。<br>不管何時，都像從零開始撰寫。</p>
 		</div>
 		<div class="benefit">
-			<h3>Managing state is easy</h3>
-			<p>Change the look and feel based on states such as <em>loading</em>, <em>disabled</em> and <em>hiding</em>.</p>
+			<h3>狀態管理非常容易</h3>
+			<p>
+				以狀態改變外觀和感覺，例如<b>讀取中</b>、<b>無法使用</b>和<b>隱藏</b>。
+			</p>
 		</div>
 		<div class="benefit">
-			<h3>No worry of regression</h3>
-			<p>When you change existing styles, have no fear that you might have caused regression elsewhere.</p>
+			<h3>不用擔心回頭重做 (regression)</h3>
+			<p>修改現有樣式時，不用害怕你可能在其他地方造成影響。</p>
 		</div>
 		<div class="benefit">
-			<h3>Any team size</h3>
-			<p>Useful in a team of one or in a team of 100.</p>
+			<h3>任何團隊大小</h3>
+			<p>一人或百人的團隊都有益。</p>
 		</div>
 		<div class="benefit">
-			<h3>Semantic HTML and CSS</h3>
-			<p>MaintainableCSS embraces semantic HTML and CSS, so you get all the benefits too.</p>
+			<h3>語意化的 HTML 和 CSS</h3>
+			<p>MaintainableCSS 擁護語意化 HTML 與 CSS，<br>所以你也獲得它們帶來的好處。</p>
 		</div>
 		<div class="benefit">
-			<h3>High performance CSS</h3>
-			<p>Flat and performant selectors by convention.</p>
+			<h3>高效能的 CSS</h3>
+			<p>讓團隊根據共識撰寫扁平且高效能的 selector。</p>
 		</div>
 		<div class="benefit">
-			<h3>Find redundant code easily</h3>
-			<p>It's easy to spot redundant code. Find it. Delete it.</p>
+			<h3>容易找出累贅的程式碼</h3>
+			<p>找出累贅的程式碼非常容易。找到，然後刪除。</p>
 		</div>
 		<div class="benefit">
-			<h3>AB testing and easy upgrading</h3>
-			<p>Want to test module variants against each other? MaintainableCSS makes this easy.</p>
+			<h3>AB 測試與輕鬆升級</h3>
+			<p>想要互相測試模組變數嗎？<br>MaintainableCSS 會讓它變得很容易。</p>
 		</div>
-		<a class="benefit-readNowButton" href="/chapters/introduction">Read now</a>
+		<a class="benefit-readNowButton" href="/chapters/introduction">開始閱讀</a>
 	</div>
 </div>
 <div class="recommendations">
-	<h2 class="recommendations-title">What others say</h2>
+	<h2 class="recommendations-title">使用見證</h2>
 	<div class="recommendations-item">
 		<blockquote>
-			<p>&ldquo;A handy little read on learning how to write modular and maintainable CSS.&rdquo;
+			<p>「輕巧方便的讀物，學習如何撰寫模組化、可維護的 CSS。」
 			<br>&mdash; <cite>Smashing Magazine</cite>
 			</p>
 		</blockquote>
 	</div>
 	<div class="recommendations-item">
 		<blockquote>
-			<p>&ldquo;Finally a good book on how to write maintainable CSS.&rdquo;
+			<p>「終於有一本好書討論如何撰寫可維護的 CSS。」
 			<br>&mdash; <cite>Alexander Dajani</cite>
 			</p>
 		</blockquote>
 	</div>
 	<div class="recommendations-item">
 		<blockquote>
-			<p>&ldquo;I actually love everything about this.&rdquo;
+			<p>「我真的很喜歡裡面所有內容。」
 			<br>&mdash; <cite>Simon Taggart</cite>
 			</p>
 		</blockquote>
 	</div>
 	<div class="recommendations-item">
 		<blockquote>
-			<p>&ldquo;Totally agree with this approach to CSS.&rdquo;
+			<p>「完全同意這樣的 CSS 做法。」
 			<br>&mdash; <cite>Marcel Reyna</cite>
 			</p>
 		</blockquote>

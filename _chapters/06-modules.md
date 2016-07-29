@@ -1,40 +1,40 @@
 ---
 layout: chapter
-title: Modules
+title: 模組語法 (Modules)
 section: Core
 permalink: /chapters/modules/
-description: Learn the differences between modules and components and how to identify them within a design. We'll also code up some example modules together.
+description: 學習模組與元件語法之間的差別，還有如何在設計裡找出它們。我們也會撰寫一些示範程式碼。
 ---
 
-## What's a module?
+## 什麼是模組 (module)？
 
-A module is a distinct, independent unit, that can be combined with other modules to form a more complex structure.
+模組是一個獨特且獨立的單位，可以跟其它模組合併使用，打造更複雜的結構。
 
-In a living room, you can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
+在客廳，可以把電視、沙發和牆壁掛飾當做模組。把它們擺在一起就成為有用的房間。
 
-If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc.
+如果你把其中一個東西拿走，其它物品仍然正常運作。因為不一定要有電視才可以坐在沙發上。
 
-**In a website each of these can be considered modules:** header, footer, search form, sign up form, shopping basket, article, product list, navigation, homepage promo, archive list etc.
+**這些在網站裡都可以當做模組：**header（頁首）、footer（頁尾）、搜尋表單、註冊表單、購物車、文章、產品列表、導覽列、首頁特賣與文章彙整⋯等。
 
-## What's a component?
+## 什麼是元件 (component)？
 
-A module is made up of components. Without the components, the module is incomplete or broken.
+許多元件組成模組，如果沒有元件，模組就不完整，或是無法運作。
 
-For example a sofa is made up of the frame, upholstry, legs, cushions and back pillows, all of which are required components to allow the sofa to function as designed.
+例如一座沙發由框架、布套、椅腳、靠墊和椅背枕組成，如果要讓沙發跟設計好的一樣正常運作，這些都是必備的。
 
-A logo *module* might consist of copy, an image and a link, each of which are components. Without the image the logo is broken, without the link the logo is incomplete.
+**Logo** 模組可能會包含文案、圖片與連結，它們都是元件。缺少圖片，Logo 就壞了；沒有連結，則是不完整。
 
-## Modules vs components
+## 模組 vs. 元件
 
-Sometimes it can be tricky to decide whether something is a component or a module. For example a header is a module and it might contain a logo and a navigation menu as part of it. Are these components or modules?
+有時候，決定某個東西屬於模組還是元件是非常微妙的。例如：一個頁首模組可能包含 Logo 和導覽選單，它們屬於模組還是元件？
 
-Ultimately it doesn't matter too much and you can use your own experience to decide. For me, in a recent project it made sense for the logo to be a component of the header, and the navigation menu to be a module within the header.
+其實，如何定義並不重要，可以從自身的經驗決定。我自己最近的一個專案裡，Logo 是頁首的元件，而導覽選單是頁首之內的一個模組，都合乎邏輯。
 
-Ultimately, only you understand *your* project requirements and if you get this wrong, changing a component for a module or vice versa is a very easy thing to do.
+到最後，只有**你**自己瞭解專案的需求，如果你自己也不是很清楚的話，把元件轉為模組，或是反過來其實也是頗容易的。
 
-## Creating a module
+## 建立模組
 
-Let's build a module together. We're going to build a simplified shopping basket which is made up of a title and some products each of which contain the product title and a remove button. Here is the HTML we might typically use:
+現在來打造模組。我們打算做購物車，有一個標題和一些產品，每一個產品都有名稱欄位和移除按鈕。通常在 HTML 會這樣寫：
 
 	<div class="basket">
 	    <h2 class="basket-title">Basket</h2>
@@ -46,31 +46,32 @@ Let's build a module together. We're going to build a simplified shopping basket
 	    </div>
 	</div>
 
-And the selectors for that:
+還有它們的 selector：
 
-	/* module container */
+	/* module container 模組容器 */
 	.basket {}
 
-	/* components */
+	/* components 元件 */
 	.basket-title {}
 	.basket-item {}
 	.basket-productTitle {}
 	.basket-removeButton {}
 
-That was straight forward.
+非常的直覺。
 
-## Creating a second version of a module
+## 建立另一個版本的模組
 
-Now, let's say that during the checkout process there is a similar, cut-down version of the basket&mdash;perhaps it has a title of "Order Summary" as opposed to "Your Basket". And perhaps it doesn't have the capability to remove products.
+假設在結帳過程有一個類似的、精簡版本的購物車：也許有個名為「訂單概要」的標題，對應「你的購物車」。而且也有可能在這裡無法刪除產品。
 
-### Don't be tempted to reuse
+### 不要嘗試重複使用
 
-You might be tempted to try and reuse the basket, but as we have learnt in the chapter about Reuse, this is problematic for many reasons.
+你可能不知不覺想要：試著重複使用購物車設定，但是在重複使用的章節裡我們已經知道，這有很多問題。
 
-Additionally, your template or partial will require conditional logic to handle the differences. The more conditionality you have, the more complicated it is to touch. And, due to this conditionality, the changes you make to the template might cause regression in a condition you're not currently testing, making it harder to maintain.
+此外，範本或是一小段程式碼就要用條件判斷 (conditional logic) 來處理不同之處。條件越多，就會越複雜。還有，這些條件設定也有可能在不是你目前測試的項目，造成得要重做的狀況，讓維護更為困難。
 
-### Duplicate duplicate duplicate
+### 複製、複製，還是複製
 
-*MaintainableCSS* of course, advises to duplicate the module instead. In a recent project, I named the new version `.orderSummary`. There was similarities but just a few differences was enough to duplicate instead of the pain of trying to reuse.
+**MaintainableCSS** 的建議是用複製取代重複使用。以我最近的專案來說，我為新版本取了新名字叫做 `.orderSummary`。內容有些相似，但是少少幾個不同之處就足以用複製的方式，取代想要重複使用的痛苦。
 
-Finally, notice how with the CSS above, we have ended up with Semantic naming and encapsulated styles, making this very easy to maintain, upgrade or AB test, as and when required without fear of regression elsewhere.
+最後，請留意上方的 CSS，現在我們擁有語意化的命名和封裝的樣式了。這樣就很容易維護、升級或 AB 測試，也不會在得做這些事情的時候，害怕在其他地方得重做。
+

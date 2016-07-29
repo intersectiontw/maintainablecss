@@ -3,4 +3,4 @@ _site
 *.sublime-project
 *.sublime-workspace
 Gemfile.lock
-/config.codekit
+config.codekit

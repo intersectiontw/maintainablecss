@@ -12,7 +12,7 @@ title: "Chapters"
 
 # Chapters
 
-## Preface
+## 前言
 
 <ol>
   {% for chapter in prefaceChapters %}
@@ -20,7 +20,7 @@ title: "Chapters"
   {% endfor %}
 </ol>
 
-## Background
+## 背景
 
 {% assign backgroundStart = prefaceChapters.size | plus: 1 %}
 
@@ -30,7 +30,7 @@ title: "Chapters"
   {% endfor %}
 </ol>
 
-## Core
+## 核心
 
 {% assign coreStart = backgroundStart | plus: backgroundChapters.size %}
 
@@ -40,7 +40,7 @@ title: "Chapters"
 	{% endfor %}
 </ol>
 
-## Extras
+## 附錄
 
 {% assign extrasStart = coreStart | plus: coreChapters.size %}
 
