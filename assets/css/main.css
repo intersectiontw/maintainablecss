@@ -56,7 +56,7 @@
 }
 
 body {
-	font-family: Lato, 'helvetica neue', helvetica, arial, sans-serif;
+	font-family: Lato, 'helvetica neue', 'helvetica', 'arial', 'PingFangTC-Regular', '微軟正黑體', sans-serif;
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
     font-size: 62.5%;
@@ -468,7 +468,7 @@ a.chapterNavigation-next:active {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 15px 70px;
-	font-size: 1.375em;
+	font-size: 1.5em;
 	border: 3px solid #7FDBFF;
 	color: #7FDBFF;
 	font-weight: bold;
