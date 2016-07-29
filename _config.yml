@@ -1,9 +1,9 @@
-name: MaintainableCSS - an approach to writing modular, scalable and maintainable CSS | By Adam Silver
+name: MaintainableCSS — 以模組化、可擴張與可維護的方式撰寫 CSS。原著：Adam Silver
 markdown: kramdown
-url: http://ymcheung.github.io/maintainablecss
+url: http://intersectiontw.github.io/maintainablecss
 include: ['_pages']
 collections:
   chapters:
     output: true
     permalink: /:collection/:title/
-description: MaintainableCSS is an approach to writing modular, scalable and of course, maintainable CSS.
+description: MaintainableCSS 是以模組化、可擴張與可維護的方式撰寫 CSS。
