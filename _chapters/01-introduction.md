@@ -6,7 +6,7 @@ permalink: /chapters/introduction/
 description: 為你介紹 MaintainableCSS，一種撰寫模組化、可擴張，當然還有可維護 CSS 的方法
 ---
 
-**MaintainableCSS** 是 CSS 的一種架構規畫和寫作風格，幫助你和團隊撰寫模組化的、可擴張的，和可維護的程式碼。
+**MaintainableCSS** 是 CSS 的一種架構規畫和寫作風格，幫助你和團隊撰寫模組化、可擴張和可維護的程式碼。
 
 實際上的做法來說，身為一個開發者，我想要開個新功能、修改現有的功能，可以不用擔心蓋掉本來沒要換的樣式，甚至更糟的是我寫的程式碼在其他地方讓進度倒退。
 
