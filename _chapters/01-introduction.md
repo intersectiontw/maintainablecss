@@ -3,7 +3,7 @@ layout: chapter
 title: 簡介
 section: Preface
 permalink: /chapters/introduction/
-description: 為你介紹 MaintainableCSS，一種撰寫模組化、可擴張，當然還有可維護 CSS 的方法
+description: 為你介紹 MaintainableCSS，一種撰寫模組化、可擴張，當然還有可維護的 CSS 方法。
 ---
 
 **MaintainableCSS** 是 CSS 的一種架構規畫和寫作風格，幫助你和團隊撰寫模組化、可擴張和可維護的程式碼。
