@@ -2,7 +2,7 @@
 layout: chapter
 title: 語意化 (Semantics)
 section: Background
-permalink: /maintainablecss/chapters/semantics/
+permalink: /chapters/semantics/
 description: 為何要依據它是什麼而取名，而不是它的外表或行為。這是撰寫良好架構與易於維護 CSS 程式碼的基礎。
 ---
 

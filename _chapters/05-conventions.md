@@ -2,7 +2,7 @@
 layout: chapter
 title: 慣例 (Conventions)
 section: Core
-permalink: /maintainablecss/chapters/conventions/
+permalink: /chapters/conventions/
 description: 學習 MaintainableCSS 採用之撰寫模組、元件與狀態語法的簡易慣例。
 ---
 
