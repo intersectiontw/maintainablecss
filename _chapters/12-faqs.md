@@ -8,7 +8,7 @@ description: 所有對 MaintainableCSS 的疑問在這裡解答。
 
 找不到你要的答案嗎？在 [Github](https://github.com/adamsilver/maintainablecss.com/issues/new) 開一個 Issue 給我吧，我會儘快回覆你。感謝囉！
 
-正體中文翻譯的問題請往這邊走：
+正體中文翻譯的問題請往這邊走：[正體中文 Issue](https://github.com/intersectiontw/maintainablecss/issues/new)。
 
 ## 什麼時候該用？
 
@@ -178,4 +178,4 @@ The page styles intefered with the module styles.
 
 在 [Github](https://github.com/adamsilver/maintainablecss.com/issues/new) 開一個 Issue 給我吧，我會儘快回覆你。感謝囉！
 
-正體中文翻譯的問題請往這邊走：
+正體中文翻譯的問題請往這邊走：[正體中文 Issue](https://github.com/intersectiontw/maintainablecss/issues/new)。

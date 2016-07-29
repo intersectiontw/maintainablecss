@@ -2,7 +2,7 @@
 layout: chapters
 id: chapters
 permalink: /chapters/
-title: "Chapters"
+title: "章節"
 ---
 
 {% assign prefaceChapters = site.chapters | where:'section', 'Preface' %}
@@ -10,13 +10,13 @@ title: "Chapters"
 {% assign coreChapters = site.chapters | where:'section', 'Core' %}
 {% assign extraChapters = site.chapters | where:'section', 'Extras' %}
 
-# Chapters
+# 章節
 
 ## 前言
 
 <ol>
   {% for chapter in prefaceChapters %}
-    <li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
+    <li><a href="/maintainablecss{{ chapter.url }}">{{ chapter.title }}</a></li>
   {% endfor %}
 </ol>
 
@@ -26,7 +26,7 @@ title: "Chapters"
 
 <ol start="{{backgroundStart}}">
   {% for chapter in backgroundChapters %}
-    <li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
+    <li><a href="/maintainablecss{{ chapter.url }}">{{ chapter.title }}</a></li>
   {% endfor %}
 </ol>
 
@@ -36,7 +36,7 @@ title: "Chapters"
 
 <ol start="{{coreStart}}">
 	{% for chapter in coreChapters %}
-		<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
+		<li><a href="/maintainablecss{{ chapter.url }}">{{ chapter.title }}</a></li>
 	{% endfor %}
 </ol>
 
@@ -46,6 +46,6 @@ title: "Chapters"
 
 <ol start="{{extrasStart}}">
 	{% for chapter in extraChapters %}
-		<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
+		<li><a href="/maintainablecss{{ chapter.url }}">{{ chapter.title }}</a></li>
 	{% endfor %}
 </ol>
