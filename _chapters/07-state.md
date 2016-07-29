@@ -22,8 +22,6 @@ description: 學習如何根據狀態提供模組和元件不同的樣式，例�
 
 	.myModule {}
 
-Here are some states we might need to apply to `myModule`.
-
 這裡有一些狀態設定，有可能要套用到 `myModule`。
 
 	.myModule-isDisabled {}
@@ -31,8 +29,6 @@ Here are some states we might need to apply to `myModule`.
 	.myModule-hasProducts {}
 	.myModule-isHidden {}
 	.myModule-isLoading {}
-
-And the HTML needs to be as follows:
 
 HTML 得要這樣子撰寫：
 
@@ -45,7 +41,5 @@ HTML 得要這樣子撰寫：
 
 	<div class="myModule">
        <p class="myModule-title myModule-title-isDisabled">
-
-Phew, that was easy.
 
 呼，幸好就是這麼簡單。
