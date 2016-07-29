@@ -92,7 +92,7 @@ description: 為何要依據它是什麼而取名，而不是它的外表或行�
 
 在 HTML5 的規格手冊 3.2.5.7 章節提到樣式屬性：
 
-> 「[...] 建議編寫人員以描述該內容用途的方式使用樣式，而不是描述該內容想要如何呈現。」
+> 「⋯建議編寫人員以描述該內容用途的方式使用樣式，而不是描述該內容想要如何呈現。」
 
 ## 因為效能會大幅降低
 
@@ -108,6 +108,7 @@ It's likely that several different utility classes could refer to the same prope
 
 Think of an example of this.
 -->
+
 ## 關於「語意化」的結尾想法
 
 語意化樣式名稱是 **MaintainableCSS** 的基石。沒有做這件事的話，其他部份就沒有什麼意義了。只要根據它是什麼命名，其他就會自然跟上。
