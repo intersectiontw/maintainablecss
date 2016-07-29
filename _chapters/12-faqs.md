@@ -2,7 +2,7 @@
 layout: chapter
 title: FAQ
 section: Extras
-permalink: /maintainablecss/chapters/faqs/
+permalink: /chapters/faqs/
 description: 所有對 MaintainableCSS 的疑問在這裡解答。
 ---
 

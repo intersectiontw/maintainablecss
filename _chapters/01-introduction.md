@@ -2,7 +2,7 @@
 layout: chapter
 title: 簡介
 section: Preface
-permalink: /maintainablecss/chapters/introduction/
+permalink: /chapters/introduction/
 description: 為你介紹 MaintainableCSS，一種撰寫模組化、可擴張，當然還有可維護 CSS 的方法
 ---
 

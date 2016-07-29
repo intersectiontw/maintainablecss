@@ -2,7 +2,7 @@
 layout: chapter
 title:  結構 (Organisation)
 section: Extras
-permalink: /maintainablecss/chapters/organisation/
+permalink: /chapters/organisation/
 description: 學習如何整理 CSS 檔案。
 ---
 
